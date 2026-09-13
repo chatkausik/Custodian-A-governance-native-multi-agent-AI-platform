@@ -112,13 +112,15 @@ fallbacks are defined in [`infra/litellm/config.yaml`](infra/litellm/config.yaml
 
 ## Documentation
 
-**Start here → [Custodian Project Reference](https://claude.ai/code/artifact/c2d3ea16-4707-474c-a0a3-8ac49fc19d1f)**
-— the canonical overview: architecture diagrams, the twelve-step pipeline, the
-six governance layers, service map, setup, validation results and known gaps.
+**Start here → [Final Project Document](Custodian-Final-Project-Document.docx)**
+— an 11-page overview covering the end-to-end workflow, architecture diagrams,
+tech stack, governance controls, screenshots, setup, validation results, and
+implementation limits.
 
 | Document | What it covers |
 | --- | --- |
-| [Project Reference](https://claude.ai/code/artifact/c2d3ea16-4707-474c-a0a3-8ac49fc19d1f) | Everything, crisply. The one page to read first. |
+| [Final Project Document](Custodian-Final-Project-Document.docx) | Publication edition: the complete project explained in 11 pages with nine figures and source references. |
+| [Project Reference](https://claude.ai/code/artifact/c2d3ea16-4707-474c-a0a3-8ac49fc19d1f) | Additional architecture, pipeline, governance, setup, and validation reference. |
 | [Visual Guide](https://claude.ai/code/artifact/00c68da3-d652-4bfb-a7c4-96dd60537a9a) | All 57 plates from the project whiteboard — hand-drawn explainers and live screenshots, captioned and grouped by governance layer. Best for learning the system from scratch. |
 | [Field Guide](https://claude.ai/code/artifact/95482b5c-8532-4491-aab7-d6844a1dcba6) | Architecture and pipeline walkthrough with live console evidence from a real settled run. |
 | [`docs/Custodian-Scenario-Validation-Report.docx`](docs/Custodian-Scenario-Validation-Report.docx) | All 20 scenarios executed against a live instance — results, screenshots and 8 findings. |

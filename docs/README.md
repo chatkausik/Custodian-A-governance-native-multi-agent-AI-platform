@@ -4,6 +4,13 @@ Everything written about this project, and which one to read for what.
 
 ## Read first
 
+**[Final Project Document](../Custodian-Final-Project-Document.docx)**
+
+The publication edition: 11 pages covering the end-to-end invoice workflow,
+architecture, tech stack, governance controls, operator screenshots, deployment,
+validation evidence, and implementation limits. Includes nine figures and links
+to the source baseline.
+
 **[Custodian Project Reference](https://claude.ai/code/artifact/c2d3ea16-4707-474c-a0a3-8ac49fc19d1f)**
 
 The canonical overview. Architecture diagrams, the twelve-step invoice pipeline,
