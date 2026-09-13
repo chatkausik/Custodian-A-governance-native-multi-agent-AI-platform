@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "B01-system-context",
+    "title": "B1  System context and external boundaries",
+    "caption": "Implementation view from S3, S4 and S6. Financial settlement remains inside the project ledger; provider calls leave the local stack."
+  },
+  {
+    "slug": "B02-deployment-domains",
+    "title": "B2  Deployment domains and shared network",
+    "caption": "Grouped deployment view from infra/compose. Boxes represent service groups, not one container each. The OCR worker is created per invocation."
+  },
+  {
+    "slug": "B03-agent-orchestration",
+    "title": "B3  Agent orchestration and human review",
+    "caption": "Implementation view from graph.py and agent nodes. The critic is called within Approval. Rejection and unsafe input end the graph; human review uses a durable interrupt."
+  },
+  {
+    "slug": "B04-identity-and-secrets",
+    "title": "B4  Identity boundaries and credential brokering",
+    "caption": "Implementation view from identity.py, ledger_client.py and the agent runtime. Universal Auth tokens are cached until shortly before expiry; the ledger API key is fetched fresh for each ledger request."
+  },
+  {
+    "slug": "B05-authorization",
+    "title": "B5  Authorization and decision overrides",
+    "caption": "Implementation view from capability.py, policy_client.py and policy-service/app/main.py. The order shown is the policy service decision pipeline for checked actions."
+  },
+  {
+    "slug": "B06-data-lifecycle",
+    "title": "B6  Invoice data lifecycle and privacy boundaries",
+    "caption": "Implementation view from main.py, graph.py, extraction.py and pii.py. A successful redaction test covers the tested audit text; it does not establish protection for every durable data path."
+  },
+  {
+    "slug": "B07-model-governance",
+    "title": "B7  Model routing and prompt promotion",
+    "caption": "Implementation view from llm_clients.py, agent nodes, litellm/config.yaml, extraction.py and eval_gate.py. Thresholds shown are source defaults; no fresh evaluation was run."
+  },
+  {
+    "slug": "B08-settlement",
+    "title": "B8  Payment settlement and duplicate protection",
+    "caption": "Implementation view from payment_execution.py, ledger_client.py and ledger.py. Scenario 19 verified a stop during the hold with no ledger movement."
+  },
+  {
+    "slug": "B09-ocr-isolation",
+    "title": "B9  OCR execution and nested isolation",
+    "caption": "Implementation view from sandbox-runner/app/main.py and sandbox-ocr/ocr.py. Scenario 11 verified Docker isolation but could not verify Landlock on the reported kernel."
+  },
+  {
+    "slug": "B10-audit-lifecycle",
+    "title": "B10  Audit append verification and recovery",
+    "caption": "Implementation view from audit-log/app/main.py. MinIO is written before the Postgres transaction commits; this is ordered application logic, not a distributed atomic transaction. Restoring original object bytes is an operator action."
+  },
+  {
+    "slug": "B11-observability",
+    "title": "B11  Traces metrics and operational dashboards",
+    "caption": "Implementation view from tracing.py, prometheus.yml and the observability Compose layer. The configured Prometheus jobs are policy-service and LiteLLM."
+  },
+  {
+    "slug": "B12-operational-control",
+    "title": "B12  Stop triggers and enforcement points",
+    "caption": "Implementation view from control-plane/app/main.py, policy-service and control_plane_client.py. Reported scenarios 13, 14 and 19 cover manual stops, automatic stops and interruption during settlement hold."
+  }
+]
